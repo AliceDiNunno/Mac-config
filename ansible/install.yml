@@ -1,0 +1,8 @@
+---
+- name: Install homebrew packages
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Install Homebrew packages from Brewfile
+      command: brew bundle --file=~/Config/Brewfile 

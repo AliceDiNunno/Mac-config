@@ -1,0 +1,11 @@
+- name: Install homebrew packages
+  hosts: localhost
+  vars:
+    repo_root: "{{ lookup('env','HOME') }}/Config"
+    brewfile_path: "{{ repo_root }}/Brewfile"
+    commit_message: "Add package {{ brew_package }}"
+  roles:
+    - homebrew_install
+    - homebrew_backup
+    - git_commit
+    - git_push 

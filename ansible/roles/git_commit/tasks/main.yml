@@ -1,0 +1,18 @@
+---
+  - name: Stage Brewfile
+    command: git add {{ brewfile_path | basename }}
+    args:
+      chdir: "{{ repo_root }}"
+
+  - name: Commit changes (skip if nothing to commit)
+    command: git commit -m "{{ commit_message }}" 
+    args:
+      chdir: "{{ repo_root }}"
+    register: git_commit_result
+    failed_when: >
+      (git_commit_result.rc != 0) and
+      ('nothing to commit' not in (git_commit_result.stdout | default(''))) and
+      ('no changes added to commit' not in (git_commit_result.stdout | default('')))
+
+    # Only report "changed" when a commit actually happened
+    changed_when: git_commit_result.rc == 0

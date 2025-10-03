@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+
+if [ "$1" = "install" ]; then
+    ansible-playbook -v -i ~/Config/ansible/inventory.yml ~/Config/ansible/install-package.yml --extra-vars "brew_package=$2" 
+fi

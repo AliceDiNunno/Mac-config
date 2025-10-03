@@ -1,0 +1,18 @@
+---
+- name: Saving Brewfile (changed only if content differs)
+  ansible.builtin.shell: |
+    set -euo pipefail
+    FILE={{ brewfile_path | quote }}
+
+    before=$(shasum -a 256 "$FILE" 2>/dev/null | awk '{print $1}' || echo 'absent')
+    brew bundle dump --file="$FILE" --force
+    after=$(shasum -a 256 "$FILE" 2>/dev/null | awk '{print $1}' || echo 'absent')
+
+    if [ "$before" != "$after" ]; then
+      echo CHANGED 
+    fi
+  args:
+    chdir: "{{ repo_root }}"
+  register: brew_dump
+  changed_when: "'CHANGED' in brew_dump.stdout"
+  failed_when: brew_dump.rc != 0

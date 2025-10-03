@@ -1,0 +1,3 @@
+---
+    - name: Install Homebrew packages from Brewfile
+      command: brew bundle --file=~/Config/Brewfile

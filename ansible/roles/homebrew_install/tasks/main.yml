@@ -1,0 +1,8 @@
+---
+  - name: Install package
+    command: brew install {{ brew_package }}
+    when: brew_package is defined
+    register: brew_install
+    changed_when: >
+      '🍺' in (brew_install.stdout | default('') | lower)
+    failed_when: brew_install.rc != 0

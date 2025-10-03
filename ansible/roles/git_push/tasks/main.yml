@@ -1,0 +1,5 @@
+---
+  - name: Push current branch
+    ansible.builtin.command: git push
+    args:
+      chdir: "{{ repo_root }}"
