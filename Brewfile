@@ -22,6 +22,8 @@ brew "fswatch"
 brew "git-filter-repo"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Live reload for Go apps
+brew "go-air"
 # Fast linters runner for Go
 brew "golangci-lint"
 # Kubernetes package manager
@@ -120,4 +122,5 @@ vscode "ms-python.vscode-pylance"
 vscode "ms-python.vscode-python-envs"
 vscode "redhat.ansible"
 vscode "redhat.vscode-yaml"
+go "github.com/air-verse/air"
 npm "corepack"
