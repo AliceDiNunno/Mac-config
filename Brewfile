@@ -4,6 +4,8 @@ tap "terrastruct/tap"
 brew "ansible"
 # Checks ansible playbooks for practices and behaviour
 brew "ansible-lint"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
 # GitOps Continuous Delivery for Kubernetes
 brew "argocd"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -26,12 +28,14 @@ brew "go"
 brew "go-air"
 # Fast linters runner for Go
 brew "golangci-lint"
+# Postgres C API library
+brew "libpq"
+# Easy, fast, and beautiful database client for the terminal
+brew "harlequin"
 # Kubernetes package manager
 brew "helm"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
-# Postgres C API library
-brew "libpq"
 # List USB devices, just like the Linux lsusb command
 brew "lsusb"
 # Feature-rich command-line audio/video downloader
@@ -46,8 +50,6 @@ brew "node"
 brew "ollama", restart_service: :changed
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
-# Protocol buffers (Google's data interchange format)
-brew "protobuf"
 # Tool Command Language
 brew "tcl-tk"
 # Python interface to Tcl/Tk
@@ -115,12 +117,17 @@ cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
 vscode "dracula-theme.theme-dracula"
+vscode "golang.go"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-python.vscode-python-envs"
+vscode "ms-vscode.makefile-tools"
 vscode "redhat.ansible"
 vscode "redhat.vscode-yaml"
 go "github.com/air-verse/air"
+go "golang.org/x/tools/gopls"
+npm "@webos-tools/cli"
 npm "corepack"
