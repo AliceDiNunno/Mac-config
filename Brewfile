@@ -60,6 +60,8 @@ brew "python-tk@3.13"
 brew "redis"
 # Command-line toolbox for fancy output in the terminal
 brew "rich-cli"
+# Editor of encrypted files
+brew "sops"
 # SWF manipulation and generation tools
 brew "swftools"
 # Language for application scale JavaScript development
