@@ -1,5 +1,7 @@
 tap "localstack/tap"
 tap "terrastruct/tap"
+# Simple, modern, secure file encryption
+brew "age"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Checks ansible playbooks for practices and behaviour
