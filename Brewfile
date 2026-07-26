@@ -68,6 +68,8 @@ brew "sops"
 brew "swftools"
 # Language for application scale JavaScript development
 brew "typescript"
+# Generator for LS_COLORS with support for multiple color themes
+brew "vivid"
 # Internet file retriever
 brew "wget"
 # Tools for the WireGuard secure network tunnel
@@ -128,6 +130,7 @@ mas "Draw Things", id: 6444050820
 mas "Numbers", id: 361304891
 mas "Parcel", id: 375589283
 mas "Pocket City 2+", id: 6748041195
+mas "WireGuard", id: 1451685025
 vscode "dracula-theme.theme-dracula"
 vscode "golang.go"
 vscode "ms-azuretools.vscode-containers"
