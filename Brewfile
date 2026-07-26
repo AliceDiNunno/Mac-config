@@ -68,6 +68,8 @@ brew "swftools"
 brew "typescript"
 # Internet file retriever
 brew "wget"
+# Tools for the WireGuard secure network tunnel
+brew "wireguard-tools"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # Online gaming platform
