@@ -78,6 +78,8 @@ brew "wireguard-tools"
 brew "yq"
 # Online gaming platform
 cask "battle-net"
+# Display management tool
+cask "betterdisplay"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # OpenAI's coding agent that runs in your terminal
