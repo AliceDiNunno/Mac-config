@@ -40,6 +40,8 @@ brew "helm"
 brew "imagemagick"
 # List USB devices, just like the Linux lsusb command
 brew "lsusb"
+# Mac App Store command-line interface
+brew "mas"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Media player based on MPlayer and mplayer2
@@ -122,6 +124,10 @@ cask "unifi-identity-endpoint"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+mas "Draw Things", id: 6444050820
+mas "Numbers", id: 361304891
+mas "Parcel", id: 375589283
+mas "Pocket City 2+", id: 6748041195
 vscode "dracula-theme.theme-dracula"
 vscode "golang.go"
 vscode "ms-azuretools.vscode-containers"
