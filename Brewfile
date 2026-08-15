@@ -38,6 +38,8 @@ brew "harlequin"
 brew "helm"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
+# Tool to unpack installers created by Inno Setup
+brew "innoextract"
 # List USB devices, just like the Linux lsusb command
 brew "lsusb"
 # Mac App Store command-line interface
@@ -128,6 +130,7 @@ cask "unifi-identity-endpoint"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+mas "AdGuard Mini.app", id: 1440147259
 mas "Draw Things", id: 6444050820
 mas "Numbers", id: 361304891
 mas "Parcel", id: 375589283
