@@ -120,6 +120,8 @@ cask "postgres-app"
 cask "rapidapi"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
+# Run classic graphical adventure and role-playing games
+cask "scummvm-app"
 # Video game digital distribution service
 cask "steam"
 # Desktop client for Telegram messenger
