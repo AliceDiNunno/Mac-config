@@ -22,6 +22,8 @@ brew "doctl"
 brew "ffmpeg"
 # Monitor a directory for changes and run a shell command
 brew "fswatch"
+# GitHub command-line tool
+brew "gh"
 # Multi-platform software reverse engineering framework
 brew "ghidra"
 # Quickly rewrite git repository history
