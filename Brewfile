@@ -2,6 +2,8 @@ tap "localstack/tap"
 tap "terrastruct/tap"
 # Simple, modern, secure file encryption
 brew "age"
+# C Foreign Function Interface for Python
+brew "cffi"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Checks ansible playbooks for practices and behaviour
@@ -48,8 +50,6 @@ brew "innoextract"
 brew "lsusb"
 # Mac App Store command-line interface
 brew "mas"
-# Feature-rich command-line audio/video downloader
-brew "yt-dlp"
 # Media player based on MPlayer and mplayer2
 brew "mpv"
 # Port scanning utility for large networks
@@ -130,6 +130,8 @@ cask "scummvm-app"
 cask "steam"
 # Desktop client for Telegram messenger
 cask "telegram-desktop"
+# JDK from the Eclipse Foundation (Adoptium)
+cask "temurin@17"
 # License free Wi-Fi, VPN, and Access Application for Organizations
 cask "unifi-identity-endpoint"
 # Open-source code editor
@@ -142,6 +144,7 @@ mas "Numbers", id: 361304891
 mas "Parcel", id: 375589283
 mas "Pocket City 2+", id: 6748041195
 mas "WireGuard", id: 1451685025
+mas "Xcode", id: 497799835
 vscode "dracula-theme.theme-dracula"
 vscode "golang.go"
 vscode "ms-azuretools.vscode-containers"
