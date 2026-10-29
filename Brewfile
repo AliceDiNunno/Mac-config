@@ -12,8 +12,6 @@ brew "ansible-lint"
 brew "protobuf"
 # GitOps Continuous Delivery for Kubernetes
 brew "argocd"
-# GNU compiler collection for arm-none-eabi
-brew "arm-none-eabi-gcc"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Searches a binary image for embedded files and executable code
@@ -104,6 +102,8 @@ cask "docker-desktop"
 cask "elgato-stream-deck"
 # Web browser
 cask "firefox"
+# Pre-built GNU bare-metal toolchain for 32-bit Arm processors
+cask "gcc-arm-embedded"
 # Go (golang) IDE
 cask "goland"
 # Graphically shows disk usage within a file system
