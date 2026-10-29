@@ -12,6 +12,8 @@ brew "ansible-lint"
 brew "protobuf"
 # GitOps Continuous Delivery for Kubernetes
 brew "argocd"
+# GNU compiler collection for arm-none-eabi
+brew "arm-none-eabi-gcc"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Searches a binary image for embedded files and executable code
@@ -50,6 +52,8 @@ brew "innoextract"
 brew "lsusb"
 # Mac App Store command-line interface
 brew "mas"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
 # Media player based on MPlayer and mplayer2
 brew "mpv"
 # Port scanning utility for large networks
